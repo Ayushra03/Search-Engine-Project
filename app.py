@@ -10,7 +10,7 @@ app = Flask(__name__)
 model_distilbert = SentenceTransformer('distilbert-base-nli-mean-tokens')
 
 
-subset_df = pd.read_csv('subtitles.csv', nrows=1000)
+subset_df = pd.read_csv('subtitles.csv')
 
 
 batch_size = 32
